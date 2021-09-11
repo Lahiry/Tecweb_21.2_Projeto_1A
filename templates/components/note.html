@@ -1,0 +1,16 @@
+<div class="card" id={id}>
+
+  <form class="delete-form" method="POST">
+    <input type="hidden" name="delete_id" value="{id}">
+    <button class="btn" id="delete" type="submit">&#10060;</button>
+  </form>
+
+  <form class="update-form" autocomplete="off" onsubmit="updateContent('{id}');return false">
+    <input type="hidden" value="{id}">
+    <input id="card-{id}-title" class="card-title" value="{title}"/>
+    <textarea id="card-{id}-details" class="card-details">{details}</textarea>
+    <button class="btn" id="update" type="submit">&#9997;</button>
+  </form>
+  
+</div>
+
